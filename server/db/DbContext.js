@@ -6,8 +6,8 @@ import { ShipSchema } from '../models/Ship'
 class DbContext {
   Account = mongoose.model('Account', AccountSchema);
   Profiles = mongoose.model('Profile', ProfileSchema, 'accounts');
-  Packages = mongoose.model('Packages', PackageSchema)
-  Ships = mongoose.model('Ships', ShipSchema)
+  Packages = mongoose.model('Package', PackageSchema)
+  Ships = mongoose.model('Ship', ShipSchema)
 }
 
 export const dbContext = new DbContext()
